@@ -1,0 +1,31 @@
+
+.d-flex{
+  background:Transparent !important;
+}
+</style>
+<style>
+a:hover {
+	 text-decoration:None !important;
+}
+h1 {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
+
+#content-main{
+	background:#fff;
+}
+body {
+/*box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.62);*/
+  background: #EF629F;
+  background: linear-gradient(to right, #EF629F, #EECDA3);
+  font-family: Avenir, 'Proxima Nova', sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
