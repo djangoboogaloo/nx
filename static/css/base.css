@@ -1,30 +1,33 @@
 
-.d-flex{
-  background:Transparent !important;
-};\
-
-a:hover {
-	 text-decoration:None !important;
+body {
+background: #eceff1;
 }
-h1 {
-  margin-top: 30px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
+nav {
 
+  box-shadow: 0px 0px 10px 3px rgba(182,182,182,0.5);
+
+
+  background-color: #FFF !important;
+}
+.content {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+
+  margin-top: 40px;
+  background-color: #FFF !important;
+}
 
 
 #content-main{
-	background:#fff;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
-body {
-/*box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.62);*/
-  background: #EF629F;
-  background: linear-gradient(to right, #EF629F, #EECDA3);
-  font-family: Avenir, 'Proxima Nova', sans-serif;
-  font-weight: normal;
-  line-height: 1.5;
+.site-header {
+  height: 200px;
+  background-color: #FFF;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 16px 32px 1px rgba(182,182,182,0.5);
 }

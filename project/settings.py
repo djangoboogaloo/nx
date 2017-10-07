@@ -57,11 +57,12 @@ INSTALLED_APPS = (
 
     'Account',
 
-
+    'blog',
 
 
 # 3party
-
+'crispy_forms',
+'pagedown',
 )
 
 MIDDLEWARE_CLASSES = (

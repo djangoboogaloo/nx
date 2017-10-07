@@ -27,7 +27,7 @@ urlpatterns = [
     # url(r'^account/', include('Account.urls'), namespace='account'),
     url(r'^tai-khoan/',include('Account.urls',namespace='account')),
 
-
+    url(r'^thong-bao/', include("blog.urls",namespace='blog')),
     #stream balance
 
 

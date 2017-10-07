@@ -1,0 +1,49 @@
+{%extends "base/base-thongbao.html"%}
+
+{%block thongbao%}
+{%for post in post_list %}
+<article >
+  <a href='{{ post.get_absolute_url }}' class="title content-markdown"><h3>{{post.title }}</h3></a>
+
+
+<i class="material-icons" style="font-size:24px;color:red">account_circle</i>{{post.user}}
+<i class="material-icons" style="font-size:24px;color:red">av_timer</i>
+
+  <small >{{post.timestamp|timesince}} ago</small> <br>
+<hr>
+<p style="text-align:left"> {{post.content|truncatechars:300}}</p>
+
+<h5>read more </h5>
+
+</article>
+{%endfor %}
+
+<style>
+article{
+background: #FFF;
+padding: 10px;
+margin: 10px;
+text-align: center;
+}
+
+
+a{
+text-decoration: none;
+color: #212121;
+
+}
+a:hover{
+text-decoration: none;
+}
+
+hr {
+width: 27%;
+/* margin-top: 1rem; */
+margin-bottom: 2rem;
+border: 0;
+border-top: 2px solid rgb(255, 0, 0);
+}
+
+</style>
+
+{%endblock thongbao%}

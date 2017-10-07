@@ -1,20 +1,16 @@
 {% extends 'base/base.html' %}
 
-{% block content %}
+{% block account %}
 
 
 
-<style>
-.d-flex{
-  background:Transparent !important;
-}
-</style>
 
 
-<h1 class="text-center"; style="color:#FFF";>Sign up</h1>
+
+<h1 class="text-center";>Đăng Ký Thành Viên</h1>
 <div id="content-main" class="d-flex justify-content-center">
 
-  <form method="post">
+  <form method="post" class="col-6 col-md-auto">
     {% csrf_token %}
     {% for field in form %}
       <p>
@@ -28,9 +24,8 @@
         {% endfor %}
       </p>
     {% endfor %}
-    <button type="submit" class="btn btn-secondary">Sign up</button>
-  <button type="submit" class="btn" backgroundcolor="#4281A4">  <a href="{% url 'account:login' %}">Or
-    Log in </a></button>
+  <button type="submit" class="btn btn-primary">Đăng ký</button>
+  Or <a class="btn btn-success" href="{% url 'account:login' %}"> Đăng Nhập </a>
   </form>
 </div>
 

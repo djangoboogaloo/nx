@@ -1,0 +1,47 @@
+
+{%extends 'base/base-thongbao.html'%}
+
+
+
+{%block thongbao%}
+
+<div class="" style="background-color:#FFF; text-align:center;">
+
+
+<h1>{{instance.title}}</h1>
+
+<i class="material-icons" style="font-size:24px;color:red">account_circle</i>{{instance.user}}
+<i class="material-icons" style="font-size:24px;color:red">av_timer</i>
+
+  <small >{{instance.timestamp|timesince}} ago</small> <br>
+<hr>
+
+
+{%if instance.image%}
+<div class="img-content">
+	<img src="{{instance.image.url}}" class="img-responsive "/></div>
+{%endif%}
+
+	<p style="text-align:left">{{instance.content}}<br/> </p>
+	<small>{{instance.timestamp}}</small>
+
+</div>
+{%endblock thongbao%}
+
+
+
+
+<article >
+  <a href='{{ post.get_absolute_url }}' class="title content-markdown"><h3>{{post.title }}</h3></a>
+
+
+<i class="material-icons" style="font-size:24px;color:red">account_circle</i>{{post.user}}
+<i class="material-icons" style="font-size:24px;color:red">av_timer</i>
+
+  <small >{{post.timestamp|timesince}} ago</small> <br>
+<hr>
+<p style="text-align:left"> {{post.content|truncatechars:300}}</p>
+
+<h5>read more </h5>
+
+</article>
